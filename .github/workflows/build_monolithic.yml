@@ -27,9 +27,9 @@ jobs:
       CROSS_OVER_SOURCE_URL: https://media.codeweavers.com/pub/crossover/source/crossover-sources-21.2.0.tar.gz
       CROSS_OVER_LOCAL_FILE: crossover-22.0.1
     steps:
-      - name: Install distutils
+      - name: Install setuptools
         run: |
-          pip install distutils
+          pip install setuptools
       - name: Checkout
         uses: actions/checkout@v3
 
