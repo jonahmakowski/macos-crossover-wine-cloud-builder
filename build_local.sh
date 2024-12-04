@@ -46,7 +46,7 @@ if ! command -v "/usr/local/bin/brew" &> /dev/null
 then
     echo "</usr/local/bin/brew> could not be found"
     echo "An Intel brew installation is required"
-    exit
+    echo "Overriding"
 fi
 
 # Manually configure $PATH
