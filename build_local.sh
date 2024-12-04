@@ -39,6 +39,9 @@ export PACKAGE_UPLOAD=$GITHUB_WORKSPACE/upload
 export WINE_INSTALLATION=wine-cx${CROSS_OVER_VERSION}
 export DXVK_INSTALLATION=dxvk-cx${CROSS_OVER_VERSION}
 
+xcode-select --install
+curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh | sh
+
 # Need to ensure Intel brew actually exists
 if ! command -v "/usr/local/bin/brew" &> /dev/null
 then
