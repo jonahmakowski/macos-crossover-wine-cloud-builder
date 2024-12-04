@@ -39,6 +39,8 @@ export PACKAGE_UPLOAD=$GITHUB_WORKSPACE/upload
 export WINE_INSTALLATION=wine-cx${CROSS_OVER_VERSION}
 export DXVK_INSTALLATION=dxvk-cx${CROSS_OVER_VERSION}
 
+unset POSIXLY_CORRECT
+
 curl -fsSL -o install.sh https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 sh install.sh
 
